@@ -1,8 +1,8 @@
-<a *ngFor="let recipe of recipes;let idx=index" 
+<a
     id="{{idx}}" style="cursor: pointer;" 
     class="list-group-item clearfix"
     (click)="onDetailClick(idx)">
-    <div class="pull-left">
+    <div class="pull-left col-xs-9">
         <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
         <p class="list-group-item-text">{{ recipe.description }}</p>
     </div>

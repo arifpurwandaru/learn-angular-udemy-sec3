@@ -7,40 +7,27 @@ import { Recipe } from "../recipe.model";
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements 
-    OnInit , 
-    OnChanges, 
-    DoCheck, 
-    AfterContentInit, 
-    AfterContentChecked,
-    OnDestroy{
+    OnInit{
   @Input() recipe:Recipe;
 
   constructor() {
-    console.log("=====================> constructor called");
    }
 
    ngOnChanges(changes: SimpleChanges){
-    console.log("=====================> ngOnChanges called: ");
-    console.log(changes);
    }
 
   ngOnInit() {
-    console.log("=====================> ngOnInit called");
   }
   ngAfterContentInit(){
-    console.log("=====================> ngAfterContentInit called");
   }
 
   ngAfterContentChecked(){
-    console.log("=====================> ngAfterContentChecked called");
 
   }
   ngDoCheck(){
-    console.log("=====================> ngDoCheck called");
 
   }
   ngOnDestroy(){
-    console.log("=====================> ngOnDestroy called");
   }
 
 }
