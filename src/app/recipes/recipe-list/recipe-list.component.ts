@@ -7,15 +7,9 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit, OnChanges {
-  @Output() listKlikEmiter = new EventEmitter<number>()
   @Input() recipes: Recipe[] = [ ];
   @Input() recipe: Recipe;
  
-  onDetailClick(idx:number){
-    
-    this.listKlikEmiter.emit(idx);
-  }
-
   
   constructor() {
    }

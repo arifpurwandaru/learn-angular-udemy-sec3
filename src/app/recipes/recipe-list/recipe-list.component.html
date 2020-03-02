@@ -9,7 +9,6 @@
         <app-recipe-item 
         *ngFor="let recipeEl of recipes;let idx=index;"
         [recipe]="recipeEl" 
-        [idx] = "idx"
-        (detailEmitter)="onDetailClick($event)"></app-recipe-item>
+        [idx] = "idx"></app-recipe-item>
     </div>
 </div>
