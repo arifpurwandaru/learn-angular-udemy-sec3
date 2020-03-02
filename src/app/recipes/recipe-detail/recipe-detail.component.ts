@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges, DoCheck, AfterContentInit, AfterContentChecked, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Recipe } from "../recipe.model";
 
 @Component({
@@ -17,17 +17,6 @@ export class RecipeDetailComponent implements
    }
 
   ngOnInit() {
-  }
-  ngAfterContentInit(){
-  }
-
-  ngAfterContentChecked(){
-
-  }
-  ngDoCheck(){
-
-  }
-  ngOnDestroy(){
   }
 
 }
