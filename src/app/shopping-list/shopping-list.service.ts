@@ -17,4 +17,8 @@ export class ShoppingListService{
           this.ingredientsEmitter.emit(this.ingredients.slice());
       }
 
+      addIngredients(ings:Ingredient[]){
+        this.ingredients.push(...ings) //spread the element of ings arrays 
+        this.ingredientsEmitter.emit(this.ingredients.slice());
+      }
 }

@@ -11,7 +11,7 @@ import { RecipeService } from './recipe.service';
 export class RecipesComponent implements OnInit {
   recipes:Recipe[];
  
-  recipe: Recipe=new Recipe('','','');
+  recipe: Recipe=new Recipe('','','',[]);
 
   constructor(private recipeService: RecipeService) { }
 
